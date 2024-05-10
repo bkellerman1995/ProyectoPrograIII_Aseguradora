@@ -83,7 +83,7 @@ namespace ProyectoPrograIII.Layers.BLL
                 "\nAdjunto encontrara un archivo en formato .pdf con el detalle de la factura del plan y la poliza que adquirio el dia de hoy.";
 
             mensaje.From = new MailAddress(cuentacorreoElectronico);
-            mensaje.To.Add("utnbjkt1805@gmail.com");
+            mensaje.To.Add("bjkt1805@gmail.com");
             SmtpClient smtp = new SmtpClient("smtp.gmail.com");
             smtp.Port = 587;
             smtp.Credentials = new NetworkCredential(cuentacorreoElectronico, contrasennaGeneradaGamil);
